@@ -17,4 +17,8 @@ function LinkedList(){
   this.search = (n) => {
     this.root.find(n);
   }
+
+  this.reverse = () => {
+     this.root = this.root.reverse();
+  }
 }

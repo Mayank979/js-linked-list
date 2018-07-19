@@ -28,4 +28,16 @@ function Node(n){
 
   }
 
+  this.reverse = () => {
+    let prev = null, curr, next = null;
+    curr = this;
+    while(curr != null){
+      next = curr.next;
+      curr.next = prev;
+      prev = curr;
+      curr = next;
+    }
+    return prev;
+  }
+
 }
